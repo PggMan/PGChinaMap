@@ -13,6 +13,10 @@
 		64E9B1C221800EBE00EA162B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64E9B1C121800EBE00EA162B /* Assets.xcassets */; };
 		64E9B1C521800EBE00EA162B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E9B1C321800EBE00EA162B /* LaunchScreen.storyboard */; };
 		64E9B1C821800EBE00EA162B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E9B1C721800EBE00EA162B /* main.m */; };
+		64E9B1D721800F1400EA162B /* ChinaMapPaths.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64E9B1D121800F1400EA162B /* ChinaMapPaths.plist */; };
+		64E9B1D821800F1400EA162B /* ProvincialName.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64E9B1D221800F1400EA162B /* ProvincialName.plist */; };
+		64E9B1D921800F1400EA162B /* PGChinaMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E9B1D321800F1400EA162B /* PGChinaMap.m */; };
+		64E9B1DA21800F1400EA162B /* PGModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E9B1D621800F1400EA162B /* PGModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		64E9B1C421800EBE00EA162B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64E9B1C621800EBE00EA162B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64E9B1C721800EBE00EA162B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		64E9B1CF21800F1400EA162B /* PGChinaMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGChinaMap.h; sourceTree = "<group>"; };
+		64E9B1D121800F1400EA162B /* ChinaMapPaths.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ChinaMapPaths.plist; sourceTree = "<group>"; };
+		64E9B1D221800F1400EA162B /* ProvincialName.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ProvincialName.plist; sourceTree = "<group>"; };
+		64E9B1D321800F1400EA162B /* PGChinaMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGChinaMap.m; sourceTree = "<group>"; };
+		64E9B1D521800F1400EA162B /* PGModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGModel.h; sourceTree = "<group>"; };
+		64E9B1D621800F1400EA162B /* PGModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 		64E9B1B721800EBE00EA162B /* PGChinaMap */ = {
 			isa = PBXGroup;
 			children = (
+				64E9B1CE21800F1400EA162B /* MyMap */,
 				64E9B1B821800EBE00EA162B /* AppDelegate.h */,
 				64E9B1B921800EBE00EA162B /* AppDelegate.m */,
 				64E9B1BB21800EBE00EA162B /* ViewController.h */,
@@ -69,6 +80,35 @@
 				64E9B1C721800EBE00EA162B /* main.m */,
 			);
 			path = PGChinaMap;
+			sourceTree = "<group>";
+		};
+		64E9B1CE21800F1400EA162B /* MyMap */ = {
+			isa = PBXGroup;
+			children = (
+				64E9B1CF21800F1400EA162B /* PGChinaMap.h */,
+				64E9B1D321800F1400EA162B /* PGChinaMap.m */,
+				64E9B1D021800F1400EA162B /* MapDateSource */,
+				64E9B1D421800F1400EA162B /* M */,
+			);
+			path = MyMap;
+			sourceTree = "<group>";
+		};
+		64E9B1D021800F1400EA162B /* MapDateSource */ = {
+			isa = PBXGroup;
+			children = (
+				64E9B1D121800F1400EA162B /* ChinaMapPaths.plist */,
+				64E9B1D221800F1400EA162B /* ProvincialName.plist */,
+			);
+			path = MapDateSource;
+			sourceTree = "<group>";
+		};
+		64E9B1D421800F1400EA162B /* M */ = {
+			isa = PBXGroup;
+			children = (
+				64E9B1D521800F1400EA162B /* PGModel.h */,
+				64E9B1D621800F1400EA162B /* PGModel.m */,
+			);
+			path = M;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +170,8 @@
 			files = (
 				64E9B1C521800EBE00EA162B /* LaunchScreen.storyboard in Resources */,
 				64E9B1C221800EBE00EA162B /* Assets.xcassets in Resources */,
+				64E9B1D721800F1400EA162B /* ChinaMapPaths.plist in Resources */,
+				64E9B1D821800F1400EA162B /* ProvincialName.plist in Resources */,
 				64E9B1C021800EBE00EA162B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,6 +186,8 @@
 				64E9B1BD21800EBE00EA162B /* ViewController.m in Sources */,
 				64E9B1C821800EBE00EA162B /* main.m in Sources */,
 				64E9B1BA21800EBE00EA162B /* AppDelegate.m in Sources */,
+				64E9B1DA21800F1400EA162B /* PGModel.m in Sources */,
+				64E9B1D921800F1400EA162B /* PGChinaMap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +264,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -273,7 +317,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
