@@ -7,6 +7,8 @@
 //
 
 #import "PGChinaMap.h"
+@class PGModel;
+
 @interface PGChinaMap ()
 /**地图块贝塞尔曲线数组*/
 @property(nonatomic,strong) NSMutableArray <UIBezierPath *>*pathAry;
@@ -305,6 +307,39 @@
                           };
     }
     return _indexNameDic;
+}
+
+@end
+
+#pragma mark - PGModel
+@implementation PGModel
+- (UIColor *)backColorD{
+    
+    
+    return _backColorD != nil ? _backColorD:[UIColor greenColor];
+}
+
+- (UIColor *)backColorH{
+    
+    
+    return _backColorH != nil ? _backColorH:[UIColor redColor];
+}
+
+- (UIColor *)nameColor{
+    
+    
+    return _nameColor != nil ? _nameColor:[UIColor darkTextColor];
+}
+- (UIFont *)nameFont{
+    
+    
+    return _nameFont ? _nameFont:[UIFont systemFontOfSize:13];
+}
+
+- (UIColor *)viewColor{
+    
+    
+    return _viewColor != nil ? _viewColor:[UIColor grayColor];
 }
 
 @end

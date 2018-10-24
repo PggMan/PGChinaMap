@@ -16,7 +16,6 @@
 		64E9B1D721800F1400EA162B /* ChinaMapPaths.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64E9B1D121800F1400EA162B /* ChinaMapPaths.plist */; };
 		64E9B1D821800F1400EA162B /* ProvincialName.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64E9B1D221800F1400EA162B /* ProvincialName.plist */; };
 		64E9B1D921800F1400EA162B /* PGChinaMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E9B1D321800F1400EA162B /* PGChinaMap.m */; };
-		64E9B1DA21800F1400EA162B /* PGModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E9B1D621800F1400EA162B /* PGModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +33,6 @@
 		64E9B1D121800F1400EA162B /* ChinaMapPaths.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ChinaMapPaths.plist; sourceTree = "<group>"; };
 		64E9B1D221800F1400EA162B /* ProvincialName.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ProvincialName.plist; sourceTree = "<group>"; };
 		64E9B1D321800F1400EA162B /* PGChinaMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGChinaMap.m; sourceTree = "<group>"; };
-		64E9B1D521800F1400EA162B /* PGModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGModel.h; sourceTree = "<group>"; };
-		64E9B1D621800F1400EA162B /* PGModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +84,6 @@
 			children = (
 				64E9B1CF21800F1400EA162B /* PGChinaMap.h */,
 				64E9B1D321800F1400EA162B /* PGChinaMap.m */,
-				64E9B1D521800F1400EA162B /* PGModel.h */,
-				64E9B1D621800F1400EA162B /* PGModel.m */,
 				64E9B1D121800F1400EA162B /* ChinaMapPaths.plist */,
 				64E9B1D221800F1400EA162B /* ProvincialName.plist */,
 			);
@@ -170,7 +165,6 @@
 				64E9B1BD21800EBE00EA162B /* ViewController.m in Sources */,
 				64E9B1C821800EBE00EA162B /* main.m in Sources */,
 				64E9B1BA21800EBE00EA162B /* AppDelegate.m in Sources */,
-				64E9B1DA21800F1400EA162B /* PGModel.m in Sources */,
 				64E9B1D921800F1400EA162B /* PGChinaMap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
