@@ -82,7 +82,7 @@
 // 绘制选中区域颜色
 - (void)tap:(CGPoint)point{
     //遍历34个地图块.判断点击的是那一块
-    for (int i = 0; i <34; i++) {
+    for (NSInteger i = 0; i <34; i++) {
         UIBezierPath *path = self.pathAry[i];
         BOOL isInPath = [path containsPoint:point];
         if (isInPath) {
@@ -92,7 +92,7 @@
             self.colorAry[_seletedIdx]  = self.model.backColorH;
             [self setNeedsDisplay];
             
-            NSString *province = [self.indexNameDic objectForKey:[NSString stringWithFormat:@"%ld",_seletedIdx]];
+            NSString *province = [self.indexNameDic objectForKey:[NSString stringWithFormat:@"%zd",_seletedIdx]];
             !self.clickActionBlock?:self.clickActionBlock(province);
         }
     }
@@ -107,8 +107,8 @@
         if (name.length <= 0) return;
         
         NSString *value = [self.nameIndexDic objectForKey:name];
-        NSString *desc = [NSString stringWithFormat:@"请传入正确省份名, 此 %@ 不正确",name];
-        NSAssert((value.integerValue - 1) >= 0,desc);
+       
+        NSAssert((value.integerValue - 1) >= 0,@"请传入正确省份名");
         if ((value.integerValue - 1) < 0) return;
         
         NSInteger index = value.integerValue - 1;
